@@ -1,0 +1,30 @@
+Branching Strategy: Feature Branching
+
+Feature branching is a widely used strategy in software development that allows teams to work 
+on new features in isolation from the main codebase. This approach helps maintain a stable main 
+branch while enabling developers to work independently on new features or bug fixes. 
+
+Here’s how it works and how I would implement it for a new feature:
+1. Main Branch --> The main (master) branch contains the stable version of the code. 
+                   This is the version that is deployed to production.
+2. Develop Branch --> In the develop branch we put the latest development integrated work. 
+                      Features are merged into this branch after being reviewed and tested.
+
+3. Feature Branches: Each new feature or bug fix is developed in its own branch created from 
+                     the main branch. This allows developers to work on their changes without 
+                     affecting the stable codebase.
+
+When starting a new feature i follow these steps :
+step 1 : I would first make sure that my local develop branch 
+        is up to date, using commands -> git checkout develop and then git pull origin develop
+
+step 2 : Then I create a new feature branch from develop. For example for a "user profile" feature, 
+        I would run this command -> git checkout -b feature/user-profile
+
+step 3 : I would work on implementing the feature in the feature branch. This could involve c
+        reating new files, modifying code, and writing tests to ensure everything works as expected.
+
+step 4 : I would commit my changes as I make progress, with clear and descriptive messages
+
+step 5 : To make sure my branch stays up to date with the latest changes from other developers, 
+         I would merge or rebase the develop branch into my feature branch.

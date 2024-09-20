@@ -1,0 +1,29 @@
+Steps to Use Git
+
+step 1 : Initialize a Git Repository
+        To start a new Git repository in our project folder, we should open our terminal and 
+        navigate to the project directory. Then, run command --> git init 
+        This command creates a new .git directory in our project folder,which will track changes.
+
+step 2 : Add Files to the Staging Area
+         we need to add the files we want to commit using command --> git add .
+
+step 3 : Make a Commit
+         After staging the changes, we can commit them.By Using command -->
+         git commit -m "commit message"
+
+step 4 : Link to a GitHub Repository
+         Before pushing the code to GitHub, we need to connect our local repository to a remote one. First, create a new repository on GitHub. Then, run:
+         using command ->  git remote add <name> <url>
+
+step 5 : Push Code to GitHub
+         Finally to upload commits to GitHub or bitbucket, we can use command --> 
+         git push -u origin master
+         If you're using a different branch name (like main), replace master with that branch name.
+
+the quick summary of all the git commands is :
+git init  --> Initialize a new Git repository
+git add . --> Add all files to the staging area
+git commit -m "message" --> Commit the staged changes
+git remote add origin URL --> Link to the remote GitHub repository
+git push -u origin master --> Push code to GitHub

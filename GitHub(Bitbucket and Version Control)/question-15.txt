@@ -1,0 +1,12 @@
+To resolve a merge conflict when merging a feature branch into the main branch:
+step 1 : First,I will try to merge my feature branch into main using commands :
+         git checkout main
+         git merge feature-branch
+         If a conflict occurs, Git will notify us of the files with conflicts.I will Open these
+         files and manually resolve the conflicts by editing the code.
+step 2 : After resolving the conflicts, stage the resolved files using 
+         git add filename
+step 3 : Complete the merge by committing the changes:
+         git commit
+step 4 : Push the merged code to the remote repository:
+         git push origin main

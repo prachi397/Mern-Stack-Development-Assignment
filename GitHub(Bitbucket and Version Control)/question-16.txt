@@ -1,0 +1,17 @@
+To set up a basic CI/CD pipeline using GitHub Actions for a Node.js application, 
+use these steps:
+step 1 : Create a GitHub repository for Node.js project.
+step 2 : Add a GitHub Actions workflow by creating a .github/workflows directory in the root 
+        of project. Inside this create a file like ci-cd.yml.
+step 3 : In the YAML file define the workflow. It should run on specific branches 
+         (like main or develop) when changes are pushed.
+step 4 : The first job will be to build and test the Node.js application :
+         --> Use the actions/checkout action to pull the latest code.
+         --> Use actions/setup-node to set up a Node.js environment.
+         --> Install dependencies with npm install.
+         --> Run tests using npm test.
+step 5 : After the tests pass add a deployment job that runs after the build:
+        This could involve deploying to a cloud service or using an SSH command to deploy 
+        to a server.
+Once the .yml file is committed, GitHub Actions will automatically run the pipeline 
+every time changes are pushed, ensuring continuous integration and deployment.
